@@ -1,0 +1,17 @@
+@import "src/styles/theme";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include screen-max-md {
+    h1 {
+      display: none;
+    }
+  }
+}
+.ingredients {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}

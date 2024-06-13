@@ -1,0 +1,16 @@
+@import "src/styles/theme";
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px 24px 24px 24px;
+  gap: 24px;
+
+  @include screen-max-md {
+    display: flex;
+    padding: 0 12px 12px 12px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,34 @@
+@import "src/styles/theme";
+
+.root {
+  display: flex;
+  height: calc(100vh);
+  overflow: hidden;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.menuWrapper {
+  padding: 24px 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.menu {
+  position: sticky;
+  top: 0;
+  width: 200px;
+  padding: 20px;
+  height: 100%;
+
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  @include screen-max-sm {
+    padding: 6px;
+    width: 60px;
+  }
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  margin: 20px auto;
+}

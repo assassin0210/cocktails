@@ -1,0 +1,18 @@
+@import "src/styles/theme";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include screen-min-md {
+    h1 {
+      display: none;
+    }
+  }
+}
+
+.title {
+  @include screen-min-md {
+    display: none;
+  }
+}
